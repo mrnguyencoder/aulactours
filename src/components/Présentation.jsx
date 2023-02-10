@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+import airport from '../assets/airport-gd4d19d688_1920.jpg';
 
 function Présentation() {
   return (
-    <section className="relative">  
+    <section id="présentation" className="relative">  
         <div className="relative h-80 overflow-hidden bg-yellow-300 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
             <img
             className="h-full w-full object-cover"

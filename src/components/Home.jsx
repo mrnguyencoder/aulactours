@@ -1,7 +1,7 @@
 import React from 'react';
 import video from '../assets/City - 23857.mp4';
 import maybay from '../assets/vna.png';
-import airport from '../assets/airport-gd4d19d688_1920.jpg';
+
 
 function Home() {
   return (
@@ -49,9 +49,6 @@ function Home() {
                 </form>
             </div>
         </div>
-
-        {/* Présentation */}
-
     </section>
   )
 }
