@@ -19,34 +19,38 @@ function Home() {
             </div>
         </div>
 {/* Search */}
-        <div id='deals' className='max-w-[1140px] m-auto w-full p-4'>
-            <form className='lg:flex lg:justifiy-between w-full items-center'>
-                <div className='flex flex-col my-2 py-2'>
-                <label>Destination</label>
-                <select className='lg:w-[300px] md:w-full border rounded-md p-2'>
-                    <option>Ha Noi</option>
-                    <option>Ho Chi Minh</option>
-                    <option>Da Nang</option>
-                    <option>Paris</option>
-                </select>
-                </div>
-                <div className='flex w-full'>
-                <div className='flex flex-col w-full lg:max-w-[250px] my-2 p-2'>
-                    <label>Check-In</label>
-                    <input className='border rounded-md p-2' type='date' />
-                </div>
-                <div className='flex flex-col w-full lg:max-w-[250px] my-2 p-2'>
-                    <label>Check-Out</label>
-                    <input className='border rounded-md p-2' type='date' />
-                </div>
-                </div>
-                <div className='flex flex-col my-2 p-2 w-full'>
-                <button className='w-full'>Recherche</button>
-                </div>
-            </form>
+        <div className='max-w-[1140px] m-auto w-full '>
+            <div className="border rounded-3xl m-4 border-yellow-100">
+                <form className='lg:flex lg:justify-between w-full items-center p-5 '>
+                    <div className='flex flex-col my-2 py-2'>
+                    <label className='font-bold text-lg text-blue-500'>Destination</label>
+                    <select className='lg:w-[300px] md:w-full border rounded-md p-2 mt-3'>
+                        <option>Ho Chi Minh</option>
+                        <option>Ha Noi</option>
+                        <option>Da Nang</option>
+                        <option>Paris</option>
+                        <option>Bangkok</option>
+                        <option>...</option>
+                    </select>
+                    </div>
+                    <div className='flex w-full'>
+                    <div className='flex flex-col w-full lg:max-w-[250px] my-2 p-2'>
+                        <label className='font-bold text-lg text-blue-500'>Aller</label>
+                        <input className='border rounded-md p-2 mt-3' type='date' />
+                    </div>
+                    <div className='flex flex-col w-full lg:max-w-[250px] my-2 p-2'>
+                        <label className='font-bold text-lg text-blue-500'>Retour</label>
+                        <input className='border rounded-md p-2 mt-3' type='date' />
+                    </div>
+                    </div>
+                    <div className='flex flex-col my-2 p-2 w-full'>
+                    <button className='w-full border py-2 rounded-full hover:bg-yellow-500'>Recherche</button>
+                    </div>
+                </form>
+            </div>
         </div>
 
-
+        {/* Présentation */}
         <div className="relative">
             <div className="relative h-80 overflow-hidden bg-yellow-300 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
                 <img
