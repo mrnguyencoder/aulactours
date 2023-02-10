@@ -19,7 +19,7 @@ function NavBar() {
             />
         </div>
         {showLinks && (
-          <div className="absolute w-screen h-screen bg-slate-800 flex flex-col justify-center items-center space-y-12">
+          <div className="absolute w-screen h-screen bg-slate-800 flex flex-col justify-center items-center space-y-12 z-10">
             {links.map(link => (
               <a 
                 key={link.href} 
@@ -34,7 +34,7 @@ function NavBar() {
         )}
         </div>
         <a href="#" className="p-4"><img src={logo} alt="logo aulac tours" className="h-10 hover:scale-110 translate duration-300" /></a>
-        <div className="hidden md:flex items-center text-2xl space-x-5 text-slate-50 pr-4">
+        <div className="hidden md:flex items-center text-xl space-x-5 text-slate-50 pr-8">
             <a href="#" className="">Accueil</a>
             <a href="#contact" className="">Contact</a>
         </div>
