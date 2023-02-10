@@ -5,7 +5,7 @@ import { HiOutlineMenuAlt2 } from "react-icons/hi";
 function NavBar() {
     const [showLinks, setShowLinks] = React.useState(false);
     const links = [
-      { href: '#', label: 'Accueil', },
+      { href: '#accueil', label: 'Accueil', },
       { href: '#contact', label: 'Contact',},
     ];
   return (

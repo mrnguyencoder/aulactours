@@ -5,22 +5,22 @@ import airport from '../assets/airport-gd4d19d688_1920.jpg';
 
 function Home() {
   return (
-    <section>
+    <section id='accueil'>
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:px-16 lg:py-20">
             <div className="pt-20 space-y-5 px-4 ">
-                <h1 className="text-3xl  font-bold text-yellow-400 tracking-wide">AULAC TOURS agence de voyage</h1>
+                <h1 className="text-3xl  font-bold text-yellow-400 tracking-wide">AULAC TOURS <br /> agence de voyage</h1>
                 <h2 className="text-xl text-blue-600 lg:text-2xl tracking-tight max-w-4xl mx-auto">Nous sommes  spécialiste et producteur  des voyages sur mesure, à la carte  en Asie du Sud- Est : Vietnam, Laos, Cambodge. Nous sommes également distributeur de toutes destinations du monde entier.</h2>
             </div>
             <div className="flex justify-center items-center relative py-10 px-4">
                 <div className="p-5">
-                    <video src={video} autoPlay muted loop className='rounded-full'></video>
+                    <video src={video} autoPlay muted loop className='rounded-3xl'></video>
                 </div>
                 <img src={maybay} alt="" className="absolute h-24 animate-pulse" />
             </div>
         </div>
-{/* Search */}
-        <div className='max-w-[1140px] m-auto w-full '>
-            <div className="border rounded-3xl m-4 border-yellow-100">
+        {/* Search */}
+        <div className='max-w-[1140px] m-auto w-full mb-20'>
+            <div className="border rounded-3xl m-4 shadow-lg">
                 <form className='lg:flex lg:justify-between w-full items-center p-5 '>
                     <div className='flex flex-col my-2 py-2'>
                     <label className='font-bold text-lg text-blue-500'>Destination</label>
