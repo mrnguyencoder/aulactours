@@ -6,6 +6,8 @@ function NavBar() {
     const [showLinks, setShowLinks] = React.useState(false);
     const links = [
       { href: '#accueil', label: 'Accueil', },
+      { href: '#présentation', label: 'Présentation', },
+      { href: '#galerie', label: 'Galerie', },
       { href: '#contact', label: 'Contact',},
     ];
   return (
@@ -36,6 +38,8 @@ function NavBar() {
         <a href="#" className="p-4"><img src={logo} alt="logo aulac tours" className="h-10 hover:scale-110 translate duration-300" /></a>
         <div className="hidden md:flex items-center text-xl space-x-5 text-slate-50 pr-8">
             <a href="#" className="">Accueil</a>
+            <a href="#présentation" className="">Présentation</a>
+            <a href="#galerie" className="">Galerie</a>
             <a href="#contact" className="">Contact</a>
         </div>
     </nav>
